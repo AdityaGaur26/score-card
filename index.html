@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>learning</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="home">
+          <h1>Home</h1>
+          <div class="score">
+            <h2>0</h2>
+          </div>
+          <div class="buttons">
+            <button class="btn" onclick="homeScoreOne()">+1</button
+            ><button class="btn" onclick="homeScoreTwo()">+2</button
+            ><button class="btn" onclick="homeScoreThree()">+3</button>
+          </div>
+        </div>
+        <div class="guest">
+          <h1>Guest</h1>
+          <div class="score">
+            <h2>0</h2>
+          </div>
+          <div class="buttons">
+            <button class="btn" onclick="guestScoreOne()">+1</button
+            ><button class="btn" onclick="guestScoreTwo()">+2</button
+            ><button class="btn" onclick="guestScoreThree()">+3</button>
+          </div>
+        </div>
+      </div>
+      <button id="reset" onclick="resetScore()">New Game</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
